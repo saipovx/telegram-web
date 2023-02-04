@@ -1,0 +1,39 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+
+    @media (max-width: $breakpoint375) {
+        max-width: none;
+    }
+
+    @media (max-width: $breakpoint300) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    font-family: 'Roboto', sans-serif;
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
