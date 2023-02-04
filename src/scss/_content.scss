@@ -93,7 +93,59 @@
                     font-size: 32px;
                     line-height: 38px;   
                     color: #ffffff;  
-                    max-width: 150px;  
+                    max-width: 150px; 
+                    z-index: 99;
+
+                    background-image: url('../img/fon1.svg');
+                    filter: saturate(0%);
+                    transition: 0.3s all ease ;
+                    background-position: -250px;
+                    border-radius: 10px;
+                    height: 10px;
+                    height: 42px;
+
+
+                    &::placeholder{
+                        z-index: 2;
+                    }
+
+                    &:focus{
+                        background-image: url('../img/fon1.svg');
+                        filter: saturate(250%);
+                    } 
+                    
+                }
+
+                &-input2{
+                    padding: 7px;
+                    background-color: rgba(29, 39, 51, 0);
+                    outline: none;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 38px;   
+                    color: #ffffff;  
+                    max-width: 150px; 
+                    z-index: 99;
+
+                    background-image: url('../img/fon2.svg');
+                    filter: saturate(0%);
+                    transition: 0.3s all ease ;
+                    background-position: -205px;
+                    border-radius: 10px;
+                    height: 10px;
+                    height: 42px;
+
+
+                    &::placeholder{
+                        z-index: 2;
+                    }
+
+                    &:focus{
+                        background-image: url('../img/fon2.svg');
+                        filter: saturate(250%);
+                    } 
                     
                 }
     
@@ -196,11 +248,6 @@
                     justify-content: space-between;
                     transition: all ease .4s;
 
-                    &:hover{
-                        border: 2px solid #6eb300;
-                        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-                        border-radius: 7px;
-                    }
 
                     &-title{
                         font-family: 'Roboto';
@@ -527,4 +574,10 @@
 
     }
 
+}
+
+.active-moneta{
+    border: 2px solid #6eb300 !important;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
 }
